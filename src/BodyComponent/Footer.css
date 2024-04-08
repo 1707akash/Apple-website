@@ -1,0 +1,140 @@
+
+
+.footer{
+    background-color: #f5f5f7;
+    padding: 2rem 0;
+    overflow: hidden;
+}
+.arView{
+    width: 95vw;
+    background-color: white;
+    height: 40vw;
+    border-radius: 2rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5,1fr)
+}
+.ice{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    transform: scale(0.6);
+}
+.slimScrn{
+    grid-row: 2/-1;
+    grid-column: 7/10;
+    transform: translateY(-3px);
+}
+.arviewText{
+    grid-row: 3/5;
+    grid-column: 3/6;
+}
+.environment{
+    width: 95vw;
+    background-color: white;
+    height: 35vw;
+    border-radius: 2rem;
+    margin:2rem auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 13rem;
+}
+.accessoryDiv{
+    padding: 4rem 0;
+    transform: scale(1.2);
+    margin-bottom: 5rem;
+}
+.coverImg{
+    margin-top: 3rem;
+}
+
+.chooseIpad{
+    width: 95vw;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 5rem 10rem;
+    margin: auto;
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footerBottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4rem;
+}
+.topFooter{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.footFeatures{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.footFeatures h2{
+    color: #333;
+}
+.footFeatures span{
+    color: #555;
+}
+.textOne{
+    width: 70%;
+    margin: 1rem auto;
+}
+.textOne p{
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    color: #666;
+}
+
+.listDivs{
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #555;
+}
+.listBottom ul{
+    margin-bottom: 1.5rem;
+}
+.rule{
+    height: 1px;
+    background-color: #999;
+    width: 70%;
+    margin: auto;
+}
+
+.footEnd{
+    width: 70%;
+    margin:2rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #555;
+}
+.footleft{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.endSpan{
+    font-size: 0.8rem;
+    color: #555;
+    width: 70%;
+    margin:2rem auto 1rem auto;
+}

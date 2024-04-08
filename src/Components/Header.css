@@ -1,0 +1,312 @@
+
+
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: #f8f8f9;
+    height: 5.5rem;
+    border-bottom: 1.5px solid #ddd;
+    transition: top 0.3s;
+}
+.topHeader{
+    grid-column: 3/12;
+    height: 2.75rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 0.5rem 0;
+}
+.ullist{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    justify-items: center;
+    gap: 0.8rem;
+    /* justify-content: space-between; */
+    font-size: 0.8rem;
+}
+
+.bottomDiv{
+    /* grid-column: 1/-1; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    position: fixed;
+    left: 0rem;
+    top: 2.75rem;
+    background-color: rgba(248, 248, 249,0.6);
+    z-index: 100;
+    transition: top 0.3s;
+}
+.scrolled .bottomDiv {
+    top: 0; 
+  }
+
+.bottomHeader{
+    grid-column: 3/12;
+    height: 2.6rem;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    padding: 0.5rem 0;
+    gap: 1rem;
+    
+    
+}
+.bottomHeader span{
+    grid-column: 1/2;
+    margin-left: 1rem;
+}
+.btmright{
+    grid-column: 9/-1;
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+    font-size: 0.8rem;
+    font-weight: 500;
+    align-items: center;
+    /* margin-right: -0.5rem; */
+}
+.btmright button{
+    background-color: #0071e3;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+}
+
+/* ............ Navlist Dropdowns...........  */
+
+/* ........store dropdown .......... */
+.store{
+    position: relative;
+}
+.storedrag{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -18.4rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    
+}
+
+.topDiv{
+    background-color: #f8f8f9;
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    gap: 5.5rem;
+    padding: 2rem 3rem;   
+}
+.store:hover .storedrag {
+    display: block;
+}
+
+
+/* ..........Mac dropdown..........  */
+.mac{
+    position: relative;
+}
+
+.macDrag{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -23rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.mac:hover .macDrag{
+    display: block;
+}
+
+
+/* .........ipad dropdown .............. */
+
+.ipadDrop{
+    position: relative;
+}
+.ipadDrag{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -27.5rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.ipadDrop:hover .ipadDrag{
+    display: block;
+}
+
+
+/* .............iphone dropdown..........+  */
+
+.iPhone{
+    position: relative;
+}
+.iphoneDrag{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -31.5rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.iPhone:hover .iphoneDrag{
+    display: block;
+}
+
+
+/* .............watch dropdown..........+  */
+.watch{
+    position: relative;
+}
+.watchDrag{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -36.5rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.watch:hover .watchDrag{
+    display: block;
+}
+
+
+/* .............Airpods dropdown..........+  */
+.airpods{
+    position: relative;
+}
+.airPodDrag{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -40.5rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.airpods:hover .airPodDrag{
+    display: block;
+}
+
+
+/* .............TV home dropdown..........+  */
+
+.tvHome{
+    position: relative;
+}
+.tvDrag{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -45rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    /* transition: 0.5s; */
+}
+.tvHome:hover .tvDrag{
+    display: block;
+}
+
+
+/* .............Entertainment dropdown..........+  */
+.entertainment{
+    position: relative;
+}
+.enterDrop{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -49rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.entertainment:hover .enterDrop{
+    display: block;
+}
+
+
+/* .............Accessories dropdown..........+  */
+.accessories{
+    position: relative;
+}
+.accessDrop{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -54.5rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.accessories:hover .accessDrop{
+    display: block;
+}
+
+
+/* .............Support dropdown..........+  */
+.support{
+    position: relative;
+}
+.supportDrop{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -60rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.support:hover .supportDrop{
+    display: block;
+}
+
+/* .............Shopping dropdown..........+  */
+
+.shopping{
+    position: relative;
+}
+.shoppingDrop{
+    height: calc(100vh - 43px);
+    width: 100vw;
+    position: absolute;
+    top: 44px;
+    left: -70rem;
+    background-color: white;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.shopping:hover .shoppingDrop{
+    display: block;
+}
