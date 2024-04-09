@@ -72,20 +72,20 @@ const MidBody = () => {
     <div className="filesLeft">
         <Card
             cardIcon={downArrow}
-            padding='0rem' height='13.5rem'
+            padding='0rem' height='auto'
             cardText="Download files, stream movies, collaborate with colleagues and upload content from just about anywhere."
           />
           <Card
             cardIcon={wifi}
-            padding='0rem' height='13.5rem'
+            padding='0rem' height='auto'
             cardText="Fast Wi‑Fi lets you stay connected at home, work, school or wherever you go with iPad."
           />
           <Card
             cardIcon={signal}
-            padding='0rem' height='10rem'
+            padding='0rem' height='auto'
             cardText="With 4G LTE Advanced, you can connect even when you can’t access Wi‑Fi.2"
           />
-          <span className='text-sky-600 text-2xl hover:underline pr-2'>Learn more about cellular <span><FontAwesomeIcon icon={faAngleRight} /></span></span>
+          <span className='text-sky-600 text-2xl md:max-xl:text-xl hover:underline pr-2'>Learn more about cellular <span><FontAwesomeIcon icon={faAngleRight} /></span></span>
         </div>
 
         <div className="filesRight">
@@ -110,12 +110,12 @@ const MidBody = () => {
         <div className="leftFeature">
         <Card
             cardIcon={pencil}
-            padding='0rem' height='13rem'
+            padding='0rem' height='auto'
             cardText="Using Apple Pencil is as natural as putting pen to paper, but with capabilities that make handwriting as powerful as typed text.3"
           />
           <Card
             cardIcon={note}
-            padding='0rem' height='12rem'
+            padding='0rem' height='auto'
             cardText="Take unforgettable notes, create a work of art, mark up screenshots and much more."
           />
           <span className='text-sky-600 text-2xl hover:underline pr-2'>Learn more about Apple Pencil <span><FontAwesomeIcon icon={faAngleRight} /></span></span>
@@ -123,12 +123,12 @@ const MidBody = () => {
         <div className="rightFeature">
         <Card
             cardIcon={scenery}
-            padding='0rem' height='13rem'
+            padding='0rem' height='auto'
             cardText="Attach a thin and light Smart Keyboard for comfortable typing — perfect for writing your novel or crafting your business plan."
           />
           <Card
             cardIcon={laptop}
-            padding='0rem' height='12rem'
+            padding='0rem' height='auto'
             cardText="The Smart Keyboard folds up into a slim, lightweight cover for portable protection.3"
           />
           <span className='text-sky-600 text-2xl hover:underline pr-2'>Learn more about the Smart Keyboard <span><FontAwesomeIcon icon={faAngleRight} /></span></span>

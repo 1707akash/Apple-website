@@ -168,6 +168,13 @@
 .rightShoot{
     padding: 5rem 0 0 5rem ;
 }
+@media screen and (min-width:710px) and (max-width:1260px) {
+    .rightShoot{
+        grid-column: 10/-1;
+        padding: 2rem 0;
+    }
+}
+
 @media screen and (max-width:710px) {
     .coachesDiv{
         grid-template-columns: 1fr;
@@ -187,7 +194,7 @@
     }
     .shootEdits{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
     }
     .shootEdit{
         grid-row: 2/-1;

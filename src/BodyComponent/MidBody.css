@@ -3,7 +3,7 @@
 
 .midBody{
     display: grid;
-    width: 100%;
+    /* width: 100%; */
     grid-template-rows: minmax(2rem, min-content) minmax(2rem, min-content) minmax(2rem, min-content) minmax(2rem, min-content) minmax(2rem, min-content) minmax(2rem, min-content);
     overflow: hidden;
 }
@@ -11,7 +11,6 @@
 .flowerDiv{
     display: grid;
     grid-template-columns: repeat(13,1fr);
-
 }
 .flowerLeft{
     grid-column: 1/6;
@@ -88,7 +87,7 @@
 .getTo{
     grid-row-start: -3;
     grid-column: 2/4;
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 
 
@@ -126,12 +125,9 @@
 .features{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    /* gap: 2rem; */
 }
-
 .leftFeature{
     grid-column: 4/7;
-    /* padding-right: 1rem; */
 }
 .rightFeature{
     grid-column: 7/11;
@@ -145,3 +141,94 @@
     margin: auto;
     padding: 10rem 0 3rem 6rem;
 }
+@media screen and (max-width:710px) {
+    /* .features{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    } */
+    .leftFeature{
+        grid-column: 2/-2;
+    }
+    .rightFeature{
+        grid-column: 2/-2;
+        padding: 0;
+    }
+}
+
+/* ...........Flowers Div responsive ........ */
+@media screen and (min-width:710px) and (max-width:1100px) {
+    .flowerRight{
+      grid-template-rows: repeat(4,1fr) 1.5rem 1.5rem 1.5rem;
+      padding-bottom: 2rem;
+    }
+    .shootedit{
+        padding: 0;
+        grid-row-start: -4;
+    }
+}
+@media screen and (max-width:710px) {
+    .flowerDiv{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        width: 100%;
+    }
+    .flowerLeft{
+        grid-row: 1/2;
+        padding: 1rem 0;
+    }
+    .flowerRight{
+        grid-row: 2/-1;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .flowers{
+        grid-column: 3/-2;
+        grid-row: 1/5;
+    }
+    .shootedit{
+        grid-row-start: -2;
+        padding: 0;
+    }
+}
+
+  /* ..........wireless reesponsive..........  */
+@media screen and (min-width:800px) and (max-width:1250px){
+    .innerWireless{
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+@media screen and (max-width:800px) {
+    .innerWireless{
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+
+/*............... Write It responsive...........  */
+@media screen and (min-width:710px) and (max-width:1250px) {
+    .getTo{
+        padding: 0;
+    }
+    
+}
+@media screen and (max-width:710px)  {
+    .filesDiv{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .filesLeft{
+        grid-row: 1/2;
+        padding: 0;
+    }
+    .filesRight{
+        grid-row: 2/-1;
+        grid-template-rows: repeat(3,1fr);
+    }
+    .filesImg{
+        transform: scale(0.85) translateX(1px);
+    }
+    
+}
+
+
+/* ..................Write it responsive ............... */
+
