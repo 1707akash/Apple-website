@@ -9,6 +9,7 @@
     height: 5.5rem;
     border-bottom: 1.5px solid #ddd;
     transition: top 0.3s;
+    overflow: hidden;
 }
 .topHeader{
     grid-column: 3/12;
@@ -29,7 +30,7 @@
 
 .bottomDiv{
     /* grid-column: 1/-1; */
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(12,1fr);
     position: fixed;

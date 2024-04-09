@@ -1,57 +1,151 @@
 
-
-.hero{
-    width: 100%;
-    height: 200vh;
-    background-color: #f5f5f7;
-    padding-bottom: 6rem;
-}
-.topHero{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-}
-.imageDiv{
-    /* height: 100%; */
-    grid-column: 4/11;
+/* .imageDiv{
+    grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(8,1fr);
+} */
+.hero{
+    width: 100vw;
+    /* height: 200vh; */
+    background-color: #f5f5f7;
+    padding-bottom: 6rem;
+    display: grid;
+    grid-template-rows: minmax(3rem,min-content) minmax(3rem,min-content);
+    gap: 3rem;
+    overflow: hidden;
+}
+.topHero{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
 }
 .ipadHero{
-    grid-column: 1/-1;
+    grid-column: 4/11;
     grid-row: 1/-1;
 }
 .blockiPad{
-    grid-column: 5/-1;
+    font-size: 7rem;
+    grid-column: 9/11;
     grid-row-start: 2;
     z-index: 1;
 }
+
+.a13bionic{
+    padding-left: 1.5rem;
+    grid-column-start: 9;
+    grid-row-start: 4;
+    transform: scale(1.4);
+    z-index: 1;
+}
 .ultrawide{
-    grid-column: 1/2;
-    grid-row: 6/7;
+    padding-left: 0.5rem;
+    grid-column-start: 4;
+    grid-row-start: 5;
+    transform: scale(1.4);
     z-index: 1;
 }
 .gbstorage{
-    padding-top: 3rem;
-    grid-column: -2/-1;
-    grid-row: 6/7;
+    /* padding-left: 1.5rem; */
+    grid-column-start: 10;
+    grid-row-start: 5;
+    transform: scale(1.2);
     z-index: 1;
 }
-.a13bionic{
-    padding-left: 2rem;
-    grid-column: -3/-2;
-    grid-row: 5/6;
-    z-index: 1;
-}
-
-
 .bottomHero{
+    width: 100%;
     display: grid;
     justify-items: center;
     align-items: center;
     gap: 0.75rem;
-    grid-template-rows: 12rem 3rem 3rem 3rem
+    grid-template-rows: 4fr 1fr 1fr 1fr
 }
 .easyDoesit{
     width: 55%;
+    z-index: 0;
+}
+
+@media screen and (min-width:1120px) and (max-width:1300px) {
+    .hero{
+        gap: 0;
+        padding-bottom: 1rem;
+    }
+    .topHero{
+        grid-template-rows: repeat(5,1fr);
+    }
+    .gbstorage{
+        grid-column-start: 10;
+        /* padding-left: 5em; */
+    }
+    .ipadHero{
+        grid-column: 4/11;
+        grid-row: 2/-1;
+    }
+    .blockiPad{
+        font-size: 6rem;
+        grid-column: 5/7;
+        grid-row-start: 1;
+        z-index: 1;
+        padding-top: 3rem;
+    }
+    .bottomHero{
+        gap: 0;
+        grid-template-rows: 3fr 1fr 1fr 1fr
+    }
+    
+}
+@media screen and (max-width:1120px) {
+    .hero{
+        gap: 0;
+    }
+    .topHero{
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+    .gbstorage{
+        grid-column-start: 9;
+        grid-row-start: 4;
+        /* padding-left: 5em; */
+    }
+    .a13bionic{
+        /* padding-left: 1.5rem; */
+        grid-column-start: 8;
+        grid-row-start: 3;
+        transform: scale(1.4);
+        z-index: 1;
+    }
+    .ipadHero{
+        grid-column: 3/10;
+        grid-row: 2/-1;
+    }
+    .blockiPad{
+        font-size: 6rem;
+        grid-column: 4/6;
+        grid-row-start: 1;
+        z-index: 1;
+        padding-top: 3rem;
+    }
+    .ultrawide{
+        /* padding-right: 0.5rem; */
+        grid-column-start: 2;
+        grid-row-start: 4;
+        transform: scale(1.4);
+        z-index: 1;
+    }
+    .bottomHero{
+        gap: 0;
+        grid-template-rows: 2fr 1fr 1fr 1fr
+    }
+    
+}
+
+
+@media screen and (max-width:785px) {
+    
+    .topHero{
+        grid-template-rows: 1fr 1fr 1fr 1fr 2rem;
+    }
+    
+    
 }
