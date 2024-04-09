@@ -56,18 +56,18 @@ const Topbody = () => {
         <div className="leftSketch">
           <Card
             cardIcon={user}
-            padding="1rem"
+            padding="6px"
             cardText="A more powerful Neural Engine drives machine learning–based features like Live Text in iPadOS."
           />
           <Card
             cardIcon={letterA}
-            padding="1rem"
+            padding="6px"
             cardText="The A13 Bionic chip effortlessly powers advanced apps like Adobe Fresco and Procreate."
           />
           <Card
             cardIcon={battery}
             cardText="With all-day battery life, iPad is ready to work or play for as long as you need it.1"
-            padding="1rem"
+            padding="6px"
           />
         </div>
         <div className="rightSketch">
@@ -105,7 +105,7 @@ const Topbody = () => {
         </div>
       </div>
 
-      <div className="shootEdits">
+      <div className="shootEdits ">
         <img className="shootEdit" src={shootEdit} alt="shootEdit" />
         <div className="rightShoot">
         <Card

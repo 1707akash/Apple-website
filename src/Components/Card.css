@@ -8,10 +8,56 @@
     height: 3.5rem;
     width: 3.5rem;
 }
-
 .cardText{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.8rem;
     padding-top: 1rem;
+}
+@media screen and (min-width:850px) and (max-width:1250px) {
+    .card{
+        width: 90%;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .cardText{
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        padding-top: 1rem;
+    }
+}
+@media screen and (min-width:710px) and (max-width:850px) {
+    .cardIcon{
+        height: 3rem;
+        width: 3rem;
+    }
+    .card{
+        width: 90%;
+        height: auto;
+        margin: 0rem;
+    }
+    .cardText{
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1rem;
+        padding-top: 0rem;
+    }
+}
+@media screen and (max-width:710px) {
+    .cardIcon{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .card{
+        width: 90%;
+        height: auto;
+        margin: 0.5rem 1rem;
+    }
+    .cardText{
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        padding-top: 0.5rem;
+    }
 }

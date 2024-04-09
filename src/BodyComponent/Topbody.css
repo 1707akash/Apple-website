@@ -44,7 +44,6 @@
 }
 .gameLeft{
     grid-column: 1/9;
-    
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(7,1fr);
@@ -59,6 +58,7 @@
     padding-top: 4rem;
     grid-column: 9/-1;
     width: 100%;
+
 }
 .playNew{
     grid-column-start: 3;
@@ -91,13 +91,13 @@
     width: 100%;
     transform: translateX(8rem) scale(1.2) ;
 }
-
 .paintDraw{
     padding-top: 1rem;
     grid-column-start: -4;
     grid-row-start: -2;
     z-index: 1;
 }
+
 
 
 .yellowDiv{
@@ -157,9 +157,6 @@
     z-index: 1;
     transform: scale(1.1);
 }
-
-
-
 .shootEdits{
     display: grid;
     grid-template-columns: repeat(13,1fr);
@@ -170,4 +167,116 @@
 }
 .rightShoot{
     padding: 5rem 0 0 5rem ;
+}
+@media screen and (max-width:710px) {
+    .coachesDiv{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 2rem 0;
+    }
+    .rightCoaches{
+        grid-row: 1/2;
+    }
+    .leftCoaches{
+        grid-column: 2/-1;
+        margin-top: 0.5rem;
+    }
+    .coaches{
+        transform: scale(0.9) translateX(20%);
+        margin: auto;
+    }
+    .shootEdits{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .shootEdit{
+        grid-row: 2/-1;
+        grid-column: 1/-1;
+        width: 60%;
+        margin: auto;
+    }
+    .rightShoot{
+        grid-row: 1/2;
+        padding: 1rem;
+    }
+    
+}
+
+ /* .............Apparel div responsiveness...........  */
+@media screen and (max-width:850px) {
+    .innerApparel{
+        grid-template-rows: repeat(7,1fr) 2rem 2rem 2rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .innerApparel{
+        grid-template-rows: repeat(6,1fr) 1rem 1rem 1rem 1rem ;
+    }
+}
+
+
+/* ..............Game Div media query ........... */
+@media screen and (min-width:710px) and (max-width:1250px) {
+    .gameDiv{
+        padding: 2rem 1rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .gameRight{
+        padding: 0;
+    }
+}
+@media screen and (max-width:710px) {
+    .gameDiv{
+        padding: 1rem 0;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr;
+    }
+    .gameRight{
+        padding: 0;
+        grid-row: 1/2;
+    }
+    .gameLeft{
+        grid-row: 2/-1;
+        
+    }
+    .gameArcade{
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        transform:  scale(0.8) ;
+        margin: auto;
+    }
+    .playNew{
+        grid-row-start: -3;
+    }
+}
+
+
+  /* ...........Sketch DIv responsive.........  */
+@media screen and (max-width:710px) {
+    .sketchDiv{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 2rem 0;
+    }
+    .leftSketch{
+        grid-row: 1/2;
+        margin-bottom: 1.5rem;
+    }
+    .rightSketch{
+        grid-row: 2/-1;
+    }
+    .paintDraw{
+        padding: 0;
+    }
+    .paintDraw{
+        grid-row-start:-3;
+    }
+    .sketch{
+        transform: translateX(0px) scale(1) ;
+    }
+    .takeNotes{
+        transform: scale(1.5);
+    }
 }
