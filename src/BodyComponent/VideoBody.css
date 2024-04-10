@@ -1,18 +1,17 @@
 
 
 .videoBody{
-    height: 85vh;
-    width: 100vw;
+    /* height: 85vh;
+    width: 100vw; */
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(7,1fr);
+    grid-template-rows: repeat(5,1fr);
 }
 .videoDiv{
     grid-row: 2/7;
-    grid-column: 6  /-1;
-    height: 80vh;
+    grid-column: 4/-2;
     width: 60vw;
-    background: url('../Assets/FooterImg/cameraOutline.png');
+    /* background: url('../Assets/FooterImg/cameraOutline.png'); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,15 +19,28 @@
 .video{
     border-radius: 1rem;
     transform: rotate(-3deg) translateX(6.5rem) translateY(6rem);
+    box-shadow: -1px -4px 41px 6px rgba(0,0,0,0.58);
 }
 .grid-btn{
-    grid-column: 5/7;
-    grid-row: 5/6;
+    grid-column: 4/6;
+    grid-row: 4/5;
     padding-top: 2rem;
 }
+@media screen and (max-width:850px) {
+    .grid-btn{
+        grid-column: 3/5;
+    }
+    .video{
+        border-radius: 1rem;
+        transform: rotate(-3deg) translateX(2.5rem) translateY(9rem);
+    }
+    
+}
 .moreNatural{
-    grid-column-start:5;
-    grid-row-start: 4;
+    grid-column-start:3;
+    grid-row-start: 3;
+    /* padding-left: 2rem; */
+    transform: translateX(2rem);
 }
 .btn{
     background-color: white;

@@ -4,7 +4,7 @@
     width: 100%;
     display: grid;
     grid-template-rows: minmax(2rem,min-content) minmax(2rem,min-content) minmax(2rem,min-content) minmax(2rem,min-content);
-    padding-bottom: 12rem;
+    padding-bottom: 5rem;
     
 }
 
