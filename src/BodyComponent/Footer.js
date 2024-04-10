@@ -319,7 +319,7 @@ const Footer = () => {
                 style={{ color: "#818488" }}
               />
             </span>
-            <h2 className="text-xl font-medium">Free delivery and pickup</h2>
+            <h2 className="text-xl iconHead font-medium">Free delivery and pickup</h2>
             <span className="text-center">
               Get free delivery or pickup at your Apple Store.
             </span>
@@ -336,7 +336,7 @@ const Footer = () => {
                 style={{ color: "#818488" }}
               />
             </span>
-            <h2 className="text-xl font-medium">Ways to buy</h2>
+            <h2 className="text-xl iconHead font-medium">Ways to buy</h2>
             <span className="text-center">
               Choose the way that′s right for you.
             </span>
@@ -353,7 +353,7 @@ const Footer = () => {
                 style={{ color: "#818488" }}
               />
             </span>
-            <h2 className="text-xl font-medium">Add that personal touch</h2>
+            <h2 className="text-xl iconHead font-medium">Add that personal touch</h2>
             <span className="text-center">
               Engrave a mix of emoji, names, initials and numbers. All for free.
             </span>
