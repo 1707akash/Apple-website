@@ -253,13 +253,13 @@ const Footer = () => {
       </div>
 
       <div className="accessoryDiv">
-        <h1 className="text-5xl font-semibold my-2.5 text-center">
+        <h1 className="text-5xl font-semibold my-2.5 md:max-lg:text-3xl md:max-lg:leading-7 sm:max-md:text-2xl sm:max-md:leading-7 text-center">
           Accessories that let you
           <br />
           do more with iPad.
         </h1>
         <br />
-        <p className="text-xl text-center">
+        <p className="text-xl text-center md:max-lg:text-xl md:max-lg:leading-5 sm:max-md:text-lg sm:max-md:leading-5">
           Explore keyboards, cases, covers, Apple Pencil, AirPods and more.
         </p>
         <br />
