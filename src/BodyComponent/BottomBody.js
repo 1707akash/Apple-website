@@ -31,20 +31,20 @@ const BottomBody = () => {
       <div className="OpSystem">
         <img className="useTwoApp" src={useTwoApp} alt="useTwoApp" />
         <div className="multiTouch">
-          <span className="text-2xl font-semibold leading-7">
+          <span className="text-2xl leading-7 md:max-lg:text-xl md:max-lg:leading-3 sm:max-md:text-lg sm:max-md:leading-3 font-semibold">
             Designed for the large Multi‑Touch display, iPadOS is powerful and
             easy to use.
           </span>
           <br />
-          <br />
-          <span className="text-2xl font-semibold leading-7">
+          <br className="break" />
+          <span className="text-2xl leading-7 md:max-lg:text-xl md:max-lg:leading-3 sm:max-md:text-lg sm:max-md:leading-3 font-semibold">
             iPadOS pushes the capabilities of iPad further with more
             discoverable multitasking, new ways to find and organise
             information, and enhanced note‑taking.
           </span>
           <br />
-          <br />
-          <span className="text-sky-600 text-2xl hover:underline pr-2 leading-7">
+          <br className="break" />
+          <span className="text-sky-600 text-2xl  leading-7 md:max-lg:text-xl md:max-lg:leading-3 sm:max-md:text-lg 0:max-md:leading-3 font-semibold hover:underline pr-2">
             See what’s new in iPadOS{" "}
             <span>
               <FontAwesomeIcon icon={faAngleRight} />
@@ -61,7 +61,7 @@ const BottomBody = () => {
       <div className="appsForEvr">
         <img className="appsFor" src={appsFor} alt="appsFor" />
         <div className="featureDiv">
-          <p className="text-xl font-semibold leading-7 text-justify">
+          <p className="text-xl font-semibold leading-7 md:max-lg:text-xl md:max-lg:leading-5 sm:max-md:text-lg sm:max-md:leading-5 text-justify">
             iPad comes with powerful Apple‑designed apps like Photos, Maps,
             Messages, Mail and Safari. And with over a million apps on the App
             Store designed just for iPad, you’ll find the right app for anything
@@ -70,7 +70,7 @@ const BottomBody = () => {
           </p>
           {/* <br />
           <br /> */}
-          <span className="text-sky-600 font-semibold text-xl hover:underline pr-2 leading-7">
+          <span className="text-sky-600 font-semibold text-xl md:max-lg:text-xl md:max-lg:leading-5 sm:max-md:text-lg sm:max-md:leading-5 hover:underline pr-2 leading-7">
             Discover apps for iPad on the App Store
             <span>
               <FontAwesomeIcon icon={faAngleRight} />
@@ -95,12 +95,11 @@ const BottomBody = () => {
         <img className="fingerprint" src={fingerprint} alt="fingerprint" />
         <img className="privacy" src={privacy} alt="privacy" />
         <div className="privacyDetails">
-          <p className="text-xl font-semibold leading-7 text-justify">
+          <p className="text-xl font-semibold leading-7 md:max-lg:text-xl md:max-lg:leading-5 sm:max-md:text-lg sm:max-md:leading-5 text-justify">
             Like every Apple product, iPad was designed with your privacy and
             security in mind. It’s not always easy. But that’s the kind of
             innovation we believe in.
           </p>
-          <br />
           <br />
           <span className="text-sky-600 font-semibold  text-xl hover:underline pr-2 leading-7">
             Discover more about our approach to privacy
@@ -115,7 +114,7 @@ const BottomBody = () => {
         <img className="designed" src={designed} alt="designed" />
         <img className="frndchat" src={frndchat} alt="frndchat" />
         <div className="designDIv">
-          <p className="text-2xl font-semibold leading-7 text-justify">
+          <p className="text-2xl font-semibold leading-7 md:max-lg:text-xl md:max-lg:leading-5 sm:max-md:text-lg sm:max-md:leading-5 text-justify">
             Technology is most powerful when everyone can use it. That’s why
             iPad comes with accessibility features that support vision, hearing,
             mobility and cognitive needs. Like sign language prominence in
@@ -123,7 +122,7 @@ const BottomBody = () => {
             and make the person prominent in a Group FaceTime call.
           </p>
           <br />
-          <span className="text-sky-600 font-semibold  text-xl hover:underline pr-2 leading-7">
+          <span className="text-sky-600 font-semibold  text-xl md:max-lg:text-xl md:max-lg:leading-5 sm:max-md:text-lg sm:max-md:leading-5 hover:underline pr-2 leading-7">
             Discover all accessibility features
             <span>
               <FontAwesomeIcon icon={faAngleRight} />
