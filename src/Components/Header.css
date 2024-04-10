@@ -43,7 +43,6 @@
 .scrolled .bottomDiv {
     top: 0; 
   }
-
 .bottomHeader{
     grid-column: 3/12;
     height: 2.6rem;
@@ -51,8 +50,6 @@
     grid-template-columns: repeat(12,1fr);
     padding: 0.5rem 0;
     gap: 1rem;
-    
-    
 }
 .bottomHeader span{
     grid-column: 1/2;
@@ -65,13 +62,13 @@
     font-size: 0.8rem;
     font-weight: 500;
     align-items: center;
-    /* margin-right: -0.5rem; */
 }
 .btmright button{
     background-color: #0071e3;
     padding: 0.2rem 1rem;
     border-radius: 1rem;
 }
+
 
 /* ............ Navlist Dropdowns...........  */
 
@@ -88,8 +85,7 @@
     background-color: white;
     z-index: 6;
     background-color: rgba(255, 255, 255, 0.5);
-    display: none;
-    
+    display: block;
 }
 
 .topDiv{
@@ -310,4 +306,25 @@
 }
 .shopping:hover .shoppingDrop{
     display: block;
+}
+/* .listTags:hover{
+    display: block;
+} */
+
+@media screen and (max-width:1280px) {
+    .bottomHeader{
+        grid-column: 2/-1;
+    }
+    .btmright{
+        grid-column: 6/-1;
+    }
+}
+@media screen and (max-width:800px) {
+    .listTags{
+        display: none;
+    }
+    .ullist{
+        display: flex;
+        justify-content: space-around;
+    }
 }

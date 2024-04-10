@@ -23,7 +23,6 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener on unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -40,7 +39,7 @@ const Header = () => {
           </li>
 
           {/* ........store dropdown .......... */}
-          <li className="store">
+          <li className="store listTags">
             <span>Store</span>
             <div className="storedrag ">
               <div className="topDiv">
@@ -75,7 +74,7 @@ const Header = () => {
           </li>
 
           {/* ...........Mac dropdown..........  */}
-          <li className="mac">
+          <li className="mac listTags">
             <span>Mac</span>
             <div className="macDrag">
               <div className="topDiv">
@@ -124,7 +123,7 @@ const Header = () => {
             </div>
           </li>
           {/* ............ipad Dropdwon..........  */}
-          <li className="ipadDrop">
+          <li className="ipadDrop listTags">
             <span>iPad</span>
             <div className="ipadDrag">
               <div className="topDiv">
@@ -171,7 +170,7 @@ const Header = () => {
             </div>
           </li>
           {/* .............iphone dropdown..........+  */}
-          <li className="iPhone">
+          <li className="iPhone listTags">
             <span>iPhone</span>
             <div className="iphoneDrag">
               <div className="topDiv">
@@ -221,7 +220,7 @@ const Header = () => {
             </div>
           </li>
           {/* .............watch dropdown..........+  */}
-          <li className="watch">
+          <li className="watch listTags">
             <span>Watch</span>
             <div className="watchDrag">
               <div className="topDiv">
@@ -265,7 +264,7 @@ const Header = () => {
             </div>
           </li>
           {/* .............airpods dropdown..........+  */}
-          <li className="airpods">
+          <li className="airpods listTags">
             <span>AirPods</span>
             <div className="airPodDrag">
               <div className="topDiv">
@@ -305,7 +304,7 @@ const Header = () => {
             </div>
           </li>
           {/* .............TV&Home dropdown..........+  */}
-          <li className="tvHome">
+          <li className="tvHome listTags">
             <span>TV&Home</span>
             <div className="tvDrag">
               <div className="topDiv">
@@ -343,7 +342,7 @@ const Header = () => {
             </div>
           </li>
           {/* .............TV&Home dropdown..........+  */}
-          <li className="entertainment">
+          <li className="entertainment listTags">
             <span>Entertainment</span>
             <div className="enterDrop">
               <div className="topDiv">
@@ -372,7 +371,7 @@ const Header = () => {
             </div>
           </li>
           {/* .............TV&Home dropdown..........+  */}
-          <li className="accessories">
+          <li className="accessories listTags">
             <span>Accessories</span>
             <div className="accessDrop">
               <div className="topDiv">
@@ -400,7 +399,7 @@ const Header = () => {
             </div>
           </li>
           {/* .............Support dropdown..........+  */}
-          <li className="support">
+          <li className="support listTags">
             <span>Support</span>
             <div className="supportDrop">
               <div className="topDiv">
