@@ -216,16 +216,17 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="arView">
+      {/* md:max-lg:text-xl md:max-lg:leading-5 sm:max-md:text-lg sm:max-md:leading-5 */}
         <img className="ice" src={ice} alt="ice" />
         <img className="slimScrn" src={slimScrn} alt="slimScrn" />
         <div className="arviewText">
-          <h1 className="text-5xl font-semibold">
+          <h1 className="text-5xl md:max-lg:text-3xl md:max-lg:leading-7 sm:max-md:text-2xl sm:max-md:leading-7 font-semibold">
             Use AR to view
             <br />
             iPad.
           </h1>
           <br />
-          <span className="text-2xl ">
+          <span className="text-2xl md:max-lg:text-xl md:max-lg:leading-5 sm:max-md:text-lg sm:max-md:leading-5 ">
             Open this page with Safari on <br />
             your iPhone or iPad.
           </span>
@@ -234,17 +235,16 @@ const Footer = () => {
 
       <div className="environment">
         <img className="appleLogo" src={appleLogo} alt="appleLogo" />
-        <h1 className="text-5xl font-semibold text-green-500 my-2.5 ">
+        <h1 className="text-5xl font-semibold md:max-lg:text-3xl md:max-lg:leading-7 sm:max-md:text-2xl sm:max-md:leading-7 text-green-500 my-2.5 ">
           Environment
         </h1>
-        <p className="text-2xl text-center font-medium">
+        <p className="text-2xl text-center md:max-lg:text-xl md:max-lg:leading-4 sm:max-md:text-base sm:max-md:leading-4 font-medium pb-1">
           Apple is carbon neutral. And by 2030, all of our products will be too.
           We’re committed to one day sourcing 100% recycled and renewable
           materials across our products and packaging, all with clean energy and
           no carbon footprint.
         </p>
-        <br />
-        <span className="text-2xl text-sky-500 font-semibold">
+        <span className="text-2xl text-sky-500 md:max-lg:text-xl md:max-lg:leading-4 sm:max-md:text-base sm:max-md:leading-4 font-semibold">
           Learn more about Apple and the environment{" "}
           <span>
             <FontAwesomeIcon icon={faAngleRight} />
